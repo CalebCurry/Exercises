@@ -13,6 +13,7 @@ char RecurringNumber(string input)
     unordered_set<int> seen;
     for(char x: input)
     {
+        //could probably also use find but this works
         if(seen.count(x) == 0)
         {
             seen.insert(x);
